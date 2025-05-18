@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+<body>
+    <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>Hello, I am Adebiyi Oluwasegun</h1>
+    <p>A Front end Developer with a passion for clean code and simple design. Skilled in HTML, CSS, JS and more.</p>
+    <div class="cv">
+      <h2>My CV Highlights</h2>
+      <ul>
+        <li>Education:- Bsc. Electronic and Computer Engineering, Lagos State University</li>
+        <li>Skills:- HTML, CSS, JS. Mobile Technician</li>
+        <li>Experience:- Role: Front-End Developer,<br>
+
+Designed and developed a personal portfolio website to present my skills, 
+<br>projects, and contact information in a clean and responsive layout. 
+The <br>website was built from scratch using semantic HTML5, modern CSS <br>(including Flexbox and Grid), and JavaScript for smooth interactivity.<br>
+Tools Used: HTML, CSS, JavaScript<br>
+
+Developed a basic calculator capable of performing arithmetic operations like <br>addition, subtraction, multiplication, and division. The calculator interface was designed with a focus on usability and layout simplicity.<br>
+Tools Used: HTML, CSS, JavaScript,</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2><span>My Work</span></h2>
+    <div class="portfolio-items">
+      <div class="port-items">
+        <div class="items">
+          <h3>Portfolio Website</h3>
+          <p>A responsive portfolio site to showcase my profile, skills, and web development projects.</p>
+
+          <a href="https://github.com/Jeremiah1902/Project-port.html" target="_blank"><i class="bx bx-link-external" style ></i></a>
+        </div>
+
+        
+          <img src="images/myport.JPG" alt="">
+              
+      </div>
+      <div class="port-items">
+        <div class="items">
+          <h3>Simple Calculator</h3>
+          <p>A clean web calculator performing basic arithmetic using JavaScript.</p>
+
+          <a href="https://github.com/Jeremiah1902/My-project-Port-web" target="_blank"><i class="bx bx-link-external" style ></i></a>
+        </div>
+        <img src="images/calculate.JPG" alt="">       
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="gallery">
+    <h2><span>Photo Gallery</span></h2>
+    <div class="gallery-grid">
+      <img src="images/photo1.jpg" alt="Photo 1" onclick="openModal(this.src)">
+      <img src="images/photo2.jpg" alt="Photo 2" onclick="openModal(this.src)">
+      <img src="images/photo3.jpg" alt="Photo 3" onclick="openModal(this.src)">
+      <img src="images/photo4.jpg" alt="Photo 4" onclick="openModal(this.src)">
+      <img src="images/photo5.jpg" alt="Photo 5" onclick="openModal(this.src)">
+    </div>
+    <div id="modal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2><span>Contact Me</span></h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Adebiyi Oluwasegun. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
